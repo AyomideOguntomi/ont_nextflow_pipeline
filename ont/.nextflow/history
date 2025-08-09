@@ -1,0 +1,1 @@
+2025-08-09 16:21:26	969ms	loving_curie	OK	caa7f60eeacd155d8409ed2bd34a3eb2	57482219-5f85-4fe7-befc-16990eae65d7	nextflow run main.nf --reads 'data/*.fastq.gz' --ref ref.fasta --with-docker my_ont_image

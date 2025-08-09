@@ -1,0 +1,57 @@
+Aug-09 16:21:25.785 [main] DEBUG nextflow.cli.Launcher - $> nextflow run main.nf --reads 'data/*.fastq.gz' --ref ref.fasta --with-docker my_ont_image
+Aug-09 16:21:25.873 [main] DEBUG nextflow.cli.CmdRun - N E X T F L O W  ~  version 25.04.6
+Aug-09 16:21:25.909 [main] DEBUG nextflow.plugin.PluginsFacade - Setting up plugin manager > mode=prod; embedded=false; plugins-dir=/home/ayomide-oguntomi/.nextflow/plugins; core-plugins: nf-amazon@2.15.0,nf-azure@1.16.0,nf-cloudcache@0.4.3,nf-codecommit@0.2.3,nf-console@1.2.1,nf-google@1.21.1,nf-k8s@1.0.0,nf-tower@1.11.4,nf-wave@1.12.1
+Aug-09 16:21:25.935 [main] INFO  o.pf4j.DefaultPluginStatusProvider - Enabled plugins: []
+Aug-09 16:21:25.936 [main] INFO  o.pf4j.DefaultPluginStatusProvider - Disabled plugins: []
+Aug-09 16:21:25.939 [main] INFO  org.pf4j.DefaultPluginManager - PF4J version 3.12.0 in 'deployment' mode
+Aug-09 16:21:25.952 [main] INFO  org.pf4j.AbstractPluginManager - No plugins
+Aug-09 16:21:26.012 [main] DEBUG n.secret.LocalSecretsProvider - Secrets store: /home/ayomide-oguntomi/.nextflow/secrets/store.json
+Aug-09 16:21:26.027 [main] DEBUG nextflow.secret.SecretsLoader - Discovered secrets providers: [nextflow.secret.LocalSecretsProvider@29be7749] - activable => nextflow.secret.LocalSecretsProvider@29be7749
+Aug-09 16:21:26.092 [main] DEBUG nextflow.cli.CmdRun - Applied DSL=2 by global default
+Aug-09 16:21:26.108 [main] DEBUG nextflow.cli.CmdRun - Launching `main.nf` [loving_curie] DSL2 - revision: caa7f60eea
+Aug-09 16:21:26.110 [main] DEBUG nextflow.plugin.PluginsFacade - Plugins default=[]
+Aug-09 16:21:26.110 [main] DEBUG nextflow.plugin.PluginsFacade - Plugins resolved requirement=[]
+Aug-09 16:21:26.177 [main] DEBUG nextflow.Session - Session UUID: 57482219-5f85-4fe7-befc-16990eae65d7
+Aug-09 16:21:26.178 [main] DEBUG nextflow.Session - Run name: loving_curie
+Aug-09 16:21:26.178 [main] DEBUG nextflow.Session - Executor pool size: 12
+Aug-09 16:21:26.188 [main] DEBUG nextflow.file.FilePorter - File porter settings maxRetries=3; maxTransfers=50; pollTimeout=null
+Aug-09 16:21:26.192 [main] DEBUG nextflow.util.ThreadPoolBuilder - Creating thread pool 'FileTransfer' minSize=10; maxSize=36; workQueue=LinkedBlockingQueue[-1]; allowCoreThreadTimeout=false
+Aug-09 16:21:26.207 [main] DEBUG nextflow.cli.CmdRun - 
+  Version: 25.04.6 build 5954
+  Created: 01-07-2025 11:27 UTC (12:27 BST)
+  System: Linux 6.11.0-28-generic
+  Runtime: Groovy 4.0.26 on OpenJDK 64-Bit Server VM 21.0.8+9-Ubuntu-0ubuntu124.04.1
+  Encoding: UTF-8 (UTF-8)
+  Process: 457081@ayomide-oguntomi-Latitude-5540 [127.0.1.1]
+  CPUs: 12 - Mem: 31 GB (4.3 GB) - Swap: 8 GB (8 GB)
+Aug-09 16:21:26.232 [main] DEBUG nextflow.Session - Work-dir: /home/ayomide-oguntomi/Documents/nextflow-pipeline/ont/work [ext2/ext3]
+Aug-09 16:21:26.233 [main] DEBUG nextflow.Session - Script base path does not exist or is not a directory: /home/ayomide-oguntomi/Documents/nextflow-pipeline/ont/bin
+Aug-09 16:21:26.244 [main] DEBUG nextflow.executor.ExecutorFactory - Extension executors providers=[]
+Aug-09 16:21:26.253 [main] DEBUG nextflow.Session - Observer factory: DefaultObserverFactory
+Aug-09 16:21:26.256 [main] DEBUG nextflow.Session - Observer factory (v2): LinObserverFactory
+Aug-09 16:21:26.281 [main] DEBUG nextflow.cache.CacheFactory - Using Nextflow cache factory: nextflow.cache.DefaultCacheFactory
+Aug-09 16:21:26.288 [main] DEBUG nextflow.util.CustomThreadPool - Creating default thread pool > poolSize: 13; maxThreads: 1000
+Aug-09 16:21:26.338 [main] DEBUG nextflow.Session - Session start
+Aug-09 16:21:26.664 [main] DEBUG nextflow.script.ScriptRunner - > Launching execution
+Aug-09 16:21:26.773 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
+Aug-09 16:21:26.774 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+Aug-09 16:21:26.778 [main] DEBUG nextflow.executor.Executor - [warm up] executor > local
+Aug-09 16:21:26.785 [main] DEBUG n.processor.LocalPollingMonitor - Creating local task monitor for executor 'local' > cpus=12; memory=31 GB; capacity=12; pollInterval=100ms; dumpInterval=5m
+Aug-09 16:21:26.794 [main] DEBUG n.processor.TaskPollingMonitor - >>> barrier register (monitor: local)
+Aug-09 16:21:26.819 [main] DEBUG nextflow.processor.TaskProcessor - Creating process 'ALIGN': maxForks=0; fair=false; array=0
+Aug-09 16:21:26.848 [main] DEBUG nextflow.Session - Workflow process names [dsl2]: ALIGN
+Aug-09 16:21:26.850 [main] DEBUG nextflow.Session - Igniting dataflow network (3)
+Aug-09 16:21:26.855 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > ALIGN
+Aug-09 16:21:26.855 [main] DEBUG nextflow.script.ScriptRunner - Parsed script files:
+  Script_fb0cdc3063c1855c: /home/ayomide-oguntomi/Documents/nextflow-pipeline/ont/main.nf
+Aug-09 16:21:26.855 [main] DEBUG nextflow.script.ScriptRunner - > Awaiting termination 
+Aug-09 16:21:26.855 [main] DEBUG nextflow.Session - Session await
+Aug-09 16:21:26.857 [PathVisitor-1] DEBUG nextflow.file.PathVisitor - files for syntax: glob; folder: data/; pattern: *.fastq.gz; options: [:]
+Aug-09 16:21:26.860 [PathVisitor-1] DEBUG nextflow.file.PathVisitor - No such file or directory: data/ -- Skipping visit
+Aug-09 16:21:26.873 [main] DEBUG nextflow.Session - Session await > all processes finished
+Aug-09 16:21:26.899 [Task monitor] DEBUG n.processor.TaskPollingMonitor - <<< barrier arrives (monitor: local) - terminating tasks monitor poll loop
+Aug-09 16:21:26.900 [main] DEBUG nextflow.Session - Session await > all barriers passed
+Aug-09 16:21:26.909 [main] DEBUG n.trace.WorkflowStatsObserver - Workflow completed > WorkflowStats[succeededCount=0; failedCount=0; ignoredCount=0; cachedCount=0; pendingCount=0; submittedCount=0; runningCount=0; retriesCount=0; abortedCount=0; succeedDuration=0ms; failedDuration=0ms; cachedDuration=0ms;loadCpus=0; loadMemory=0; peakRunning=0; peakCpus=0; peakMemory=0; ]
+Aug-09 16:21:26.964 [main] DEBUG nextflow.cache.CacheDB - Closing CacheDB done
+Aug-09 16:21:26.989 [main] DEBUG nextflow.util.ThreadPoolManager - Thread pool 'FileTransfer' shutdown completed (hard=false)
+Aug-09 16:21:26.989 [main] DEBUG nextflow.script.ScriptRunner - > Execution complete -- Goodbye

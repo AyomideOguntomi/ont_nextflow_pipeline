@@ -1,0 +1,5 @@
+@SQ	SN:chr1	LN:40
+@SQ	SN:chr2	LN:39
+@PG	ID:bwa	PN:bwa	VN:0.7.17-r1188	CL:bwa mem tiny_reference.fasta tiny_dataset.fastq
+read1	4	*	0	0	*	*	0	0	ACGTACGTACGTACGTACGT	FFFFFFFFFFFFFFFFFFFF	AS:i:0	XS:i:0
+read2	4	*	0	0	*	*	0	0	TGCAAGCTTGCAAGCTTGCA	FFFFFFFFFFFFFFFFFFFF	AS:i:0	XS:i:0

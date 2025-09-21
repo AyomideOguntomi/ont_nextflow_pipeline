@@ -1,0 +1,109 @@
+Sep-21 10:36:11.428 [main] DEBUG nextflow.cli.Launcher - $> nextflow run /home/ayomide-oguntomi/Documents/nextflow-pipeline/nextflow_trial/code/main.nf -c /home/ayomide-oguntomi/Documents/nextflow-pipeline/nextflow_trial/code/nextflow.config --reads /home/ayomide-oguntomi/Documents/nextflow-pipeline/nextflow_trial/data/raw/tiny_dataset.fastq --reference /home/ayomide-oguntomi/Documents/nextflow-pipeline/nextflow_trial/data/external/tiny_reference.fasta --outdir /home/ayomide-oguntomi/Documents/nextflow-pipeline/nextflow_trial/data/results -resume
+Sep-21 10:36:11.579 [main] DEBUG nextflow.cli.CmdRun - N E X T F L O W  ~  version 25.04.6
+Sep-21 10:36:11.607 [main] DEBUG nextflow.plugin.PluginsFacade - Setting up plugin manager > mode=prod; embedded=false; plugins-dir=/home/ayomide-oguntomi/.nextflow/plugins; core-plugins: nf-amazon@2.15.0,nf-azure@1.16.0,nf-cloudcache@0.4.3,nf-codecommit@0.2.3,nf-console@1.2.1,nf-google@1.21.1,nf-k8s@1.0.0,nf-tower@1.11.4,nf-wave@1.12.1
+Sep-21 10:36:11.641 [main] INFO  o.pf4j.DefaultPluginStatusProvider - Enabled plugins: []
+Sep-21 10:36:11.642 [main] INFO  o.pf4j.DefaultPluginStatusProvider - Disabled plugins: []
+Sep-21 10:36:11.646 [main] INFO  org.pf4j.DefaultPluginManager - PF4J version 3.12.0 in 'deployment' mode
+Sep-21 10:36:11.663 [main] INFO  org.pf4j.AbstractPluginManager - No plugins
+Sep-21 10:36:11.697 [main] DEBUG nextflow.config.ConfigBuilder - Found config base: /home/ayomide-oguntomi/Documents/nextflow-pipeline/nextflow_trial/code/nextflow.config
+Sep-21 10:36:11.701 [main] DEBUG nextflow.config.ConfigBuilder - User config file: /home/ayomide-oguntomi/Documents/nextflow-pipeline/nextflow_trial/code/nextflow.config
+Sep-21 10:36:11.703 [main] DEBUG nextflow.config.ConfigBuilder - Parsing config file: /home/ayomide-oguntomi/Documents/nextflow-pipeline/nextflow_trial/code/nextflow.config
+Sep-21 10:36:11.703 [main] DEBUG nextflow.config.ConfigBuilder - Parsing config file: /home/ayomide-oguntomi/Documents/nextflow-pipeline/nextflow_trial/code/nextflow.config
+Sep-21 10:36:11.743 [main] DEBUG n.secret.LocalSecretsProvider - Secrets store: /home/ayomide-oguntomi/.nextflow/secrets/store.json
+Sep-21 10:36:11.748 [main] DEBUG nextflow.secret.SecretsLoader - Discovered secrets providers: [nextflow.secret.LocalSecretsProvider@21719a0] - activable => nextflow.secret.LocalSecretsProvider@21719a0
+Sep-21 10:36:11.764 [main] DEBUG nextflow.config.ConfigBuilder - Applying config profile: `standard`
+Sep-21 10:36:12.441 [main] DEBUG nextflow.config.ConfigBuilder - Applying config profile: `standard`
+Sep-21 10:36:12.491 [main] DEBUG nextflow.cli.CmdRun - Applied DSL=2 from script declaration
+Sep-21 10:36:12.507 [main] DEBUG nextflow.cli.CmdRun - Launching `/home/ayomide-oguntomi/Documents/nextflow-pipeline/nextflow_trial/code/main.nf` [special_carson] DSL2 - revision: c33a5731ef
+Sep-21 10:36:12.509 [main] DEBUG nextflow.plugin.PluginsFacade - Plugins default=[]
+Sep-21 10:36:12.509 [main] DEBUG nextflow.plugin.PluginsFacade - Plugins resolved requirement=[]
+Sep-21 10:36:12.572 [main] DEBUG nextflow.Session - Session UUID: 4cf4fddb-ef8b-4e03-a6c6-f340ec1fcfc7
+Sep-21 10:36:12.573 [main] DEBUG nextflow.Session - Run name: special_carson
+Sep-21 10:36:12.573 [main] DEBUG nextflow.Session - Executor pool size: 12
+Sep-21 10:36:12.583 [main] DEBUG nextflow.file.FilePorter - File porter settings maxRetries=3; maxTransfers=50; pollTimeout=null
+Sep-21 10:36:12.590 [main] DEBUG nextflow.util.ThreadPoolBuilder - Creating thread pool 'FileTransfer' minSize=10; maxSize=36; workQueue=LinkedBlockingQueue[-1]; allowCoreThreadTimeout=false
+Sep-21 10:36:12.614 [main] DEBUG nextflow.cli.CmdRun - 
+  Version: 25.04.6 build 5954
+  Created: 01-07-2025 11:27 UTC (12:27 BST)
+  System: Linux 6.14.0-29-generic
+  Runtime: Groovy 4.0.26 on OpenJDK 64-Bit Server VM 21.0.8+9-Ubuntu-0ubuntu124.04.1
+  Encoding: UTF-8 (UTF-8)
+  Process: 429227@ayomide-oguntomi-Latitude-5540 [127.0.1.1]
+  CPUs: 12 - Mem: 31 GB (5.7 GB) - Swap: 8 GB (8 GB)
+Sep-21 10:36:12.652 [main] DEBUG nextflow.Session - Work-dir: /home/ayomide-oguntomi/Documents/nextflow-pipeline/nextflow_trial/work [ext2/ext3]
+Sep-21 10:36:12.654 [main] DEBUG nextflow.Session - Script base path does not exist or is not a directory: /home/ayomide-oguntomi/Documents/nextflow-pipeline/nextflow_trial/code/bin
+Sep-21 10:36:12.678 [main] DEBUG nextflow.executor.ExecutorFactory - Extension executors providers=[]
+Sep-21 10:36:12.702 [main] DEBUG nextflow.Session - Observer factory: DefaultObserverFactory
+Sep-21 10:36:12.764 [main] DEBUG nextflow.Session - Observer factory (v2): LinObserverFactory
+Sep-21 10:36:12.804 [main] DEBUG nextflow.cache.CacheFactory - Using Nextflow cache factory: nextflow.cache.DefaultCacheFactory
+Sep-21 10:36:12.816 [main] DEBUG nextflow.util.CustomThreadPool - Creating default thread pool > poolSize: 13; maxThreads: 1000
+Sep-21 10:36:12.879 [main] DEBUG nextflow.Session - Session start
+Sep-21 10:36:12.886 [main] DEBUG nextflow.Session - Report file already exists: /home/ayomide-oguntomi/Documents/nextflow-pipeline/nextflow_trial/nf_report/report.html -- enable the 'report.overwrite' option in your config file to overwrite existing files
+nextflow.exception.AbortOperationException: Report file already exists: /home/ayomide-oguntomi/Documents/nextflow-pipeline/nextflow_trial/nf_report/report.html -- enable the 'report.overwrite' option in your config file to overwrite existing files
+	at nextflow.trace.ReportObserver.onFlowCreate(ReportObserver.groovy:133)
+	at nextflow.Session$_notifyFlowCreate_lambda40.doCall(Session.groovy:1093)
+	at nextflow.Session.notifyEvent(Session.groovy:1138)
+	at nextflow.Session.notifyFlowCreate(Session.groovy:1093)
+	at nextflow.Session.start(Session.groovy:585)
+	at nextflow.script.ScriptRunner.execute(ScriptRunner.groovy:133)
+	at nextflow.cli.CmdRun.run(CmdRun.groovy:379)
+	at nextflow.cli.Launcher.run(Launcher.groovy:513)
+	at nextflow.cli.Launcher.main(Launcher.groovy:673)
+Sep-21 10:36:12.888 [main] DEBUG nextflow.Session - Timeline file already exists: /home/ayomide-oguntomi/Documents/nextflow-pipeline/nextflow_trial/nf_report/timeline.html -- enable the 'timeline.overwrite' option in your config file to overwrite existing files
+nextflow.exception.AbortOperationException: Timeline file already exists: /home/ayomide-oguntomi/Documents/nextflow-pipeline/nextflow_trial/nf_report/timeline.html -- enable the 'timeline.overwrite' option in your config file to overwrite existing files
+	at nextflow.trace.TimelineObserver.onFlowCreate(TimelineObserver.groovy:76)
+	at nextflow.Session$_notifyFlowCreate_lambda40.doCall(Session.groovy:1093)
+	at nextflow.Session.notifyEvent(Session.groovy:1138)
+	at nextflow.Session.notifyFlowCreate(Session.groovy:1093)
+	at nextflow.Session.start(Session.groovy:585)
+	at nextflow.script.ScriptRunner.execute(ScriptRunner.groovy:133)
+	at nextflow.cli.CmdRun.run(CmdRun.groovy:379)
+	at nextflow.cli.Launcher.run(Launcher.groovy:513)
+	at nextflow.cli.Launcher.main(Launcher.groovy:673)
+Sep-21 10:36:12.890 [main] DEBUG nextflow.Session - DAG file already exists: /home/ayomide-oguntomi/Documents/nextflow-pipeline/nextflow_trial/nf_report/dag.html -- enable `dag.overwrite` in your config file to overwrite existing DAG files
+nextflow.exception.AbortOperationException: DAG file already exists: /home/ayomide-oguntomi/Documents/nextflow-pipeline/nextflow_trial/nf_report/dag.html -- enable `dag.overwrite` in your config file to overwrite existing DAG files
+	at org.codehaus.groovy.vmplugin.v8.IndyInterface.fromCache(IndyInterface.java:321)
+	at nextflow.trace.GraphObserver.onFlowCreate(GraphObserver.groovy:77)
+	at nextflow.Session$_notifyFlowCreate_lambda40.doCall(Session.groovy:1093)
+	at nextflow.Session.notifyEvent(Session.groovy:1138)
+	at nextflow.Session.notifyFlowCreate(Session.groovy:1093)
+	at nextflow.Session.start(Session.groovy:585)
+	at nextflow.script.ScriptRunner.execute(ScriptRunner.groovy:133)
+	at nextflow.cli.CmdRun.run(CmdRun.groovy:379)
+	at nextflow.cli.Launcher.run(Launcher.groovy:513)
+	at nextflow.cli.Launcher.main(Launcher.groovy:673)
+Sep-21 10:36:13.323 [main] DEBUG nextflow.script.ScriptRunner - > Launching execution
+Sep-21 10:36:13.351 [main] INFO  nextflow.script.BaseScript -  
+Sep-21 10:36:13.354 [main] INFO  nextflow.script.BaseScript - Profile: standard
+Sep-21 10:36:13.355 [main] INFO  nextflow.script.BaseScript -  
+Sep-21 10:36:13.356 [main] INFO  nextflow.script.BaseScript - Current User: ayomide-oguntomi
+Sep-21 10:36:13.357 [main] INFO  nextflow.script.BaseScript - Nextflow-version: 25.04.6
+Sep-21 10:36:13.358 [main] INFO  nextflow.script.BaseScript - Starting time: 01-07-2025 11:27 UTC
+Sep-21 10:36:13.359 [main] INFO  nextflow.script.BaseScript - Outdir:
+Sep-21 10:36:13.360 [main] INFO  nextflow.script.BaseScript -   /home/ayomide-oguntomi/Documents/nextflow-pipeline/nextflow_trial/data/results
+Sep-21 10:36:13.360 [main] INFO  nextflow.script.BaseScript - Workdir location:
+Sep-21 10:36:13.361 [main] INFO  nextflow.script.BaseScript -   /home/ayomide-oguntomi/Documents/nextflow-pipeline/nextflow_trial/work
+Sep-21 10:36:13.362 [main] INFO  nextflow.script.BaseScript - Project directory:
+Sep-21 10:36:13.362 [main] INFO  nextflow.script.BaseScript -   /home/ayomide-oguntomi/Documents/nextflow-pipeline/nextflow_trial/code
+Sep-21 10:36:13.363 [main] INFO  nextflow.script.BaseScript -  
+Sep-21 10:36:13.365 [main] WARN  nextflow.script.ScriptBinding - Access to undefined parameter `stub` -- Initialise it to a default value eg. `params.stub = some_value`
+Sep-21 10:36:13.366 [main] INFO  nextflow.script.BaseScript - null
+Sep-21 10:36:13.408 [main] WARN  nextflow.script.ScriptBinding - Access to undefined parameter `ref` -- Initialise it to a default value eg. `params.ref = some_value`
+Sep-21 10:36:13.409 [main] WARN  nextflow.script.ScriptBinding - Access to undefined parameter `ref_index` -- Initialise it to a default value eg. `params.ref_index = some_value`
+Sep-21 10:36:13.724 [main] DEBUG nextflow.script.ScriptRunner - Parsed script files:
+  Script_bf65f4d6cb2b1082: /home/ayomide-oguntomi/Documents/nextflow-pipeline/nextflow_trial/code/modules.nf
+  Script_155e3b9268c5d720: /home/ayomide-oguntomi/Documents/nextflow-pipeline/nextflow_trial/code/main.nf
+Sep-21 10:36:13.725 [main] DEBUG nextflow.Session - Session aborted -- Cause: No entry workflow specified
+Sep-21 10:36:13.757 [main] DEBUG nextflow.cli.Launcher - Operation aborted
+nextflow.exception.AbortOperationException: No entry workflow specified
+	at org.codehaus.groovy.vmplugin.v8.IndyInterface.fromCache(IndyInterface.java:321)
+	at nextflow.script.BaseScript.run0(BaseScript.groovy:176)
+	at org.codehaus.groovy.vmplugin.v8.IndyInterface.fromCache(IndyInterface.java:321)
+	at nextflow.script.BaseScript.run(BaseScript.groovy:193)
+	at nextflow.script.parser.v1.ScriptLoaderV1.runScript(ScriptLoaderV1.groovy:246)
+	at nextflow.script.parser.v1.ScriptLoaderV1.runScript(ScriptLoaderV1.groovy)
+	at nextflow.script.ScriptRunner.run(ScriptRunner.groovy:246)
+	at nextflow.script.ScriptRunner.execute(ScriptRunner.groovy:139)
+	at nextflow.cli.CmdRun.run(CmdRun.groovy:379)
+	at nextflow.cli.Launcher.run(Launcher.groovy:513)
+	at nextflow.cli.Launcher.main(Launcher.groovy:673)

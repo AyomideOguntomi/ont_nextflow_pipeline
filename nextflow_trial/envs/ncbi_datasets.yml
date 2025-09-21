@@ -1,0 +1,16 @@
+name: ncbi_datasets
+channels:
+  - conda-forge
+  - bioconda
+  - defaults
+dependencies:
+  - _libgcc_mutex=0.1=conda_forge
+  - _openmp_mutex=4.5=1_gnu
+  - bbmap=38.18=0
+  - ca-certificates=2022.12.7=ha878542_0
+  - libgcc-ng=11.2.0=h1d223b6_12
+  - libgomp=11.2.0=h1d223b6_12
+  - libstdcxx-ng=11.2.0=he4da1e4_12
+  - ncbi-datasets-cli=12.30.0=h4bd325d_0
+  - openjdk=8.0.332=h166bdaf_0
+prefix: /home/dwells/miniconda3/envs/ncbi_datasets

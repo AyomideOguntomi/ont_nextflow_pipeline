@@ -1,0 +1,9 @@
+2025-08-16 22:22:19	-	spontaneous_volta	-	c33a5731efcc067278cb84581a4db1d1	bfaf3084-1162-421f-ba3f-a0c80cbde6fe	nextflow run main.nf
+2025-08-16 22:23:06	-	cranky_booth	-	c33a5731efcc067278cb84581a4db1d1	372730a4-b316-414d-8767-13a5235207ff	nextflow run main.nf
+2025-08-18 22:16:41	-	pedantic_goodall	-	c33a5731efcc067278cb84581a4db1d1	816ded32-d32c-4caf-a92f-892bba24f887	nextflow run main.nf
+2025-08-18 22:23:40	-	stoic_perlman	-	c33a5731efcc067278cb84581a4db1d1	5b92dcc5-bd81-4d12-9f87-b289c8a5867c	nextflow run main.nf
+2025-08-18 22:29:44	-	furious_ride	-	c33a5731efcc067278cb84581a4db1d1	950dab34-4f62-4eb8-ae5d-608f608b8c7d	nextflow run main.nf
+2025-08-18 22:35:25	-	drunk_tuckerman	-	c33a5731efcc067278cb84581a4db1d1	3b301851-39e1-4b69-b032-7ff8263aa92f	nextflow run main.nf -params-file params/ref_only.yml
+2025-08-18 22:48:10	3s	distraught_goldstine	ERR	c33a5731efcc067278cb84581a4db1d1	d1cd5dda-395a-44dc-998c-736ea3b7b6b8	nextflow run main.nf -params-file params/ref_only.yml -entry REF_PIPE
+2025-08-18 23:06:51	2.7s	magical_dalembert	ERR	c33a5731efcc067278cb84581a4db1d1	163d9ab3-18fa-48e2-aebf-d8e9a5b82580	nextflow run main.nf -params-file params/ref_only.yml -entry REF_PIPE
+2025-08-18 23:10:25	3.1s	silly_babbage	ERR	c33a5731efcc067278cb84581a4db1d1	5bbc05ea-35c4-48a4-9ab4-0f0b50d9fbd5	nextflow run main.nf -params-file params/ref_only.yml -entry REF_PIPE

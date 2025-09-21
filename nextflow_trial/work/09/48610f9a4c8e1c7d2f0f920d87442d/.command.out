@@ -1,0 +1,15 @@
+Running Sniffles2, build 2.2
+  Run Mode: call_sample
+  Start on: 2025/09/21 11:20:33
+  Working dir: /home/ayomide-oguntomi/Documents/nextflow-pipeline/nextflow_trial/work/09/48610f9a4c8e1c7d2f0f920d87442d
+  Used command: /home/ayomide-oguntomi/ENTER/bin/sniffles --input tiny_sorted_.bam --vcf illumina_R1.vcf
+==============================
+Opening for reading: tiny_sorted_.bam
+Opening for writing: illumina_R1.vcf (single-sample, sorted)
+
+Analyzing 0 alignments total...
+
+Took 0.01s.
+
+Done.
+Wrote 0 called SVs to illumina_R1.vcf (single-sample, sorted)

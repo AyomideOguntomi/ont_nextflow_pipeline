@@ -1,0 +1,6 @@
+nextflow run /home/ayomide-oguntomi/Documents/nextflow-pipeline/nextflow_trial/code/main.nf   
+-c /home/ayomide-oguntomi/Documents/nextflow-pipeline/nextflow_trial/code/nextflow.config   
+--reads /home/ayomide-oguntomi/Documents/nextflow-pipeline/nextflow_trial/data/raw/tiny_dataset.fastq   
+--reference /home/ayomide-oguntomi/Documents/nextflow-pipeline/nextflow_trial/data/external/tiny_reference.fasta   
+--outdir /home/ayomide-oguntomi/Documents/nextflow-pipeline/nextflow_trial/data/results   
+-resume

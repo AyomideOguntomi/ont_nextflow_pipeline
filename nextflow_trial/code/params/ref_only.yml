@@ -1,0 +1,13 @@
+# Sequencing run name
+stub: 'SRR32250919'
+ref_stub: 'J02459.1'
+
+medaka_model: "r941_min_sup_variant_g507"
+
+# Input sequences
+reads: 'data/raw/*.fq'
+ref: 'data/external/J02459.1.fa'
+ref_index: 'data/external/J02459.1.fai'
+
+# Output directory
+outdir: "${launchDir}"

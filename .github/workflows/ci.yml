@@ -1,0 +1,52 @@
+name: nextflow_trial CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+
+jobs:
+  build-test:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout repo
+      uses: actions/checkout@v3
+
+    - name: Set up Nextflow
+      uses: nextflow-io/setup-nextflow@v2
+      with:
+        version: 25.04.7
+
+    - name: Set up Java
+      uses: actions/setup-java@v3
+      with:
+        distribution: temurin
+        java-version: 17
+
+    - name: Install dependencies
+      run: |
+        sudo apt-get update
+        sudo apt-get install -y fastqc bwa samtools minimap2
+
+    - name: Run pipeline in stub mode
+      run: |
+        mkdir -p results_ci
+        nextflow run code/main.nf \
+          -c code/nextflow.config \
+          --reads test_data/tiny_reads.fastq \
+          --reference test_data/tiny_reference.fasta \
+          --outdir results_ci \
+          --stub true \
+          -resume
+
+    - name: Check outputs
+      run: |
+        ls results_ci
+        if [ ! -f results_ci/bam_output.bam ]; then
+          echo "BAM output missing!" && exit 1
+        fi
+        if [ ! -f results_ci/variant_output.vcf ]; then
+          echo "VCF output missing!" && exit 1
+        fi
